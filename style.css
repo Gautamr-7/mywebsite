@@ -433,15 +433,20 @@
         }
 
         .form-group input,
-        .form-group textarea {
+        .form-group textarea,
+        .form-group select {
             padding: 1rem;
             border: 2px solid rgba(99, 102, 241, 0.2);
             border-radius: 10px;
             background: var(--card-light);
             color: inherit;
             font-family: inherit;
+            font-size: 1rem;
             transition: all 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
         }
+
 
         body.dark .form-group input,
         body.dark .form-group textarea {
@@ -528,4 +533,14 @@
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
+        }
+        .form-group select:focus {
+             outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        body.dark .form-group select {
+            background: var(--card-dark);
+            border-color: rgba(99, 102, 241, 0.3);
+            color: var(--text-dark);
         }
