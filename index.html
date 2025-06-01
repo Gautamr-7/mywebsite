@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gautam R - Creative Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">GR</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm Gautam R</h1>
+        <p>Creative Developer & Digital Innovator crafting beautiful experiences through code and design</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <div class="about-image">👨‍💻</div>
+      <div class="about-text">
+        <p>I'm a passionate learning developer with creating digital solutions that make a difference. I specialize in modern web technologies and love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+        <p>When I'm not coding, you'll find me exploring new technologies, exploring open-source projects and startups, or gaming. I believe in the power of technology to transform businesses and improve lives.</p>
+        <p>My approach combines technical expertise with creative thinking, ensuring every project not only functions flawlessly but also delivers an exceptional user experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="fade-in">
+    <h2 class="section-title">Skills & Expertise</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">⚛️</div>
+        <h3>Frontend Development</h3>
+        <p>HTML, JS, Modern CSS, Responsive Design</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🚀</div>
+        <h3>Programming languages</h3>
+        <p> Python, C, JS ,MySQL</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">☁️</div>
+        <h3>Entrepreneurship</h3>
+        <p>Passion</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="fade-in">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image">🛍️</div>
+        <div class="project-content">
+          <h3 class="project-title">PG website</h3>
+          <p class="project-description">PG website connecting students to the pg's surrounding the hostel</p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">CSS</span>
+            <span class="tag">HTML</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">📱</div>
+        <div class="project-content">
+          <h3 class="project-title">To be updated</h3>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-image">📊</div>
+        <div class="project-content">
+          <h3 class="project-title">To be updated</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in">
+    <h2 class="section-title">Let's Work Together</h2>
+    <div class="contact-content">
+      <p>Ready to bring your ideas to life? I'd love to hear about your project and discuss how we can create something amazing together.</p>
+      <form class="contact-form" action="https://formspree.io/f/xanjwzdn" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="project">Project Type</label>
+          <select id="project" name="project">
+            <option value="">Select a project type</option>
+            <option value="web-app">Web Application</option>
+            <option value="mobile-app">Mobile App</option>
+            <option value="website">Website</option>
+            <option value="consultation">Consultation</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell me about your project</label>
+          <textarea id="message" name="message" placeholder="Describe your project, goals, timeline, and any specific requirements..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="mailto:gautamr1357@gmail.com" class="social-link" title="gmail">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/Gautamr-7" class="social-link" title="github" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/gautamr1357/" class="social-link" title="linkedin" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://instagram.com/gautam_rosario" class="social-link" title="instagram" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Gautam R. Crafted with ❤️ and lots of ☕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
